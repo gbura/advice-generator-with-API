@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--l-cyan: hsl(193, 38%, 86%);
+	--n-green: hsl(150, 100%, 66%);
+	--g-blue: hsl(217, 19%, 38%);
+	--dg-blue: hsl(217, 19%, 24%);
+	--d-blue: hsl(218, 23%, 16%);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.6rem;
+	min-height: 100vh;
+	background-color: var(--d-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2rem;
+	padding: 0 1rem;
+	background-color: var(--dg-blue);
+	border-radius: 8px;
+}
+
+.title {
+	padding: 3rem 0;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--n-green);
+}
+
+.advice-box {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.advice {
+	color: var(--l-cyan);
+	font-size: 2.8rem;
+}
+
+.divider {
+	margin-bottom: 6rem;
+}
+
+.dice {
+	position: absolute;
+	bottom: -3.5rem;
+	background-color: var(--n-green);
+	border: none;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dice:hover {
+	box-shadow: 0 0 10px var(--n-green), 0 0 15px var(--n-green);
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 480px;
+    }
+}
